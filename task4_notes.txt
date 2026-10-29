@@ -1,0 +1,7 @@
+Task 4 scorecard run; split seed=42; training n=14700; validation n=6300.
+Candidate scenario=exclude_gender_and_apartments; variables=EXT_SOURCE_1, EXT_SOURCE_2, EMPLOYMENT_YEARS, CREDIT_TO_GOODS_PRICE, ORGANIZATION_TYPE, OCCUPATION_TYPE, AMT_GOODS_PRICE, NAME_EDUCATION_TYPE, LIVINGAREA_AVG, YEARS_SINCE_ID_PUBLISH.
+Training sample bad rate=33.333333%; population bad rate assumption=8.00%; logit intercept correction=-1.74919985.
+Score scale: 600 at good:bad odds 50:1; PDO=20; factor=28.85390082.
+The population correction assumes case-control/prior-probability shift: class-conditional predictor distributions remain stable. Validation is scored, never used to fit bins, WoE, coefficients, or score points.
+Validation discrimination is reported unweighted. Population calibration metrics use class weights to transform the 33.3% validation sample prevalence to 8%. The validation data do not themselves establish the population prior.
+Bin-level integer points are rounded for presentation; exact score and PD outputs use unrounded model coefficients and feature WoE values.
