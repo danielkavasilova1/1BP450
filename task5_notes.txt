@@ -1,0 +1,8 @@
+Seed=42; training n=14700; validation n=6300.
+Scenario=exclude_gender_and_apartments; predictors=EXT_SOURCE_1, EXT_SOURCE_2, EMPLOYMENT_YEARS, CREDIT_TO_GOODS_PRICE, ORGANIZATION_TYPE, OCCUPATION_TYPE, AMT_GOODS_PRICE, NAME_EDUCATION_TYPE, LIVINGAREA_AVG, YEARS_SINCE_ID_PUBLISH.
+Training sample bad rate=33.33333333%; assumed population bad rate=8.00000000%; logit intercept correction=-1.7491998548.
+Grade A is best/high score and grade J is worst/low score. 10 population-weighted cutoffs were estimated on training data and frozen for validation.
+Proposed policy: calibrated PD < 7.9% auto-approve (score > 557.99); 7.9% <= PD < 14.0% manual review (539.50 < score <= 557.99); PD >= 14.0% hard-decline (score <= 539.50).
+The thresholds are a proposed policy scenario, not an economically optimized cutoff. Optimization requires loan margin, LGD/recovery, exposure, and review/operating costs.
+Population-equivalent counts are weighted representations, not observed applicant counts. Validation weights reweight the case-enriched sample to the assumed population default rate.
+The prior correction assumes class-conditional predictor distributions are stable. No validation outcomes were used for model fitting or grade cutoffs.

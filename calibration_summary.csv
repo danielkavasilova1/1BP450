@@ -1,0 +1,11 @@
+measure,value
+Training sample bad rate,0.3333333333333333
+Validation sample bad rate,0.3333333333333333
+Assumed population bad rate,0.08
+Logit intercept correction,-1.7491998548092589
+Validation population-weighted observed bad rate,0.08000000000000002
+Validation population-weighted mean predicted PD,0.07978172791269403
+Training population-weighted mean predicted PD,0.08003334588630394
+Number of grades,10.0
+Score threshold for auto-approve PD,557.9884081627902
+Score threshold for hard-decline PD,539.5010728573953
