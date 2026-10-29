@@ -1,0 +1,5 @@
+Task 3; seed=42; training n=14700; sample bad rate=33.3333%; candidate predictors=15; stratified CV folds=5.
+All fold-specific classing/WoE maps and scaling are refitted within fold training data. Task 1 validation is not used.
+Correlation flags (|Spearman WoE| >= 0.70) and VIF are review indicators, not automatic deletion rules. Cramers V is reported among categorical shortlisted predictors.
+L1 logistic uses standardized WoE and target TARGET=1 (bad). Negative coefficients are generally consistent with good-over-bad WoE. CODE_GENDER is run both in and out of the shortlist as a fairness sensitivity; inclusion requires explicit fairness/legal review.
+The one-standard-error rule seeks a smaller model with CV Gini within one standard error of the best mean. AIC/BIC are secondary in-sample refit summaries. CV metrics reflect the stratified 33.3% sample bad rate; they are not population-calibrated PD metrics.
